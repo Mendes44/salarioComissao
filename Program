@@ -1,0 +1,25 @@
+package main;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class SalarioBonus {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		Locale.setDefault(Locale.US);
+		
+		System.out.println("Entre com Salario: ");
+		double salario = sc.nextDouble();
+		System.out.println("Entre com Valor que Vendeu");
+		double vendas = sc.nextDouble();
+		
+		double comissao = vendas * 0.15;
+		double totalReceber = salario + comissao;
+		
+		System.out.printf("SALARIO TOTAL: %.2f",totalReceber);
+		
+		sc.close();
+
+	}
+
+}
